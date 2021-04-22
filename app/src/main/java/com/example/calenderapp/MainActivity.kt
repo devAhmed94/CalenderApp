@@ -1,13 +1,10 @@
 package com.example.calenderapp
 
-import android.graphics.Color
-
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.calenderapp.databinding.ActivityMainBinding
 import java.time.YearMonth
-import java.time.temporal.TemporalAdjusters
 import java.time.temporal.WeekFields
 import java.util.*
 
@@ -30,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun drawDaysStyle() {
-        binding.calendarView.dayBinder = MydayBinder()
+        binding.calendarView.dayBinder = MyDayBinder()
 
     }
 
